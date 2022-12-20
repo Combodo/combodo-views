@@ -56,7 +56,7 @@ if (!class_exists('CombodoViewsInstaller'))
 	{
 		public static function AfterDatabaseSetup(Config $oConfiguration, $sPreviousVersion, $sCurrentVersion)
 		{
-			SetupPage::log_info("Create default views");
+			SetupLog::Info("Create default views");
 
 			$aMessages = array();
 			$aSugFix = array();
